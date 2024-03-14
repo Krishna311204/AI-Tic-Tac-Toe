@@ -1,0 +1,66 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 300px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: #df0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.cell:hover {
+  background-color: #df0e0e;
+}
+
+.cell.X::before {
+  content: 'X';
+  color: #df0e0e;
+}
+
+.cell.O::before {
+  content: 'O';
+  color: #df0e0e;
+}
+
+.message {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#restart-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #df0e0e;
+  border-radius: 5px;
+}
+
+#restart-btn:hover {
+  background-color: #df0e0e;
+  color: #000;
+}
